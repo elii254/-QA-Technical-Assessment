@@ -1,0 +1,59 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652216956172' stop='1652216967426'>
+    <name>check box test</name>
+    <title>check box test</title>
+    <test-cases>
+        <test-case start='1652216956174' status='broken' stop='1652216967424'>
+            <name>should check the second checkbox</name>
+            <title>should check the second checkbox</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.54'/>
+            </parameters>
+            <steps>
+                <step start='1652216956180' status='passed' stop='1652216967097'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='7a3f80e0-192b-4a3a-987a-ac0c5a991f68-attachment.json' type='application/json' size='60'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1652216967097' status='passed' stop='1652216967117'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='dab103b1-56e7-455d-91c5-b4ea8fa8d70e-attachment.json' type='application/json' size='14'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1652216967309' status='broken' stop='1652216967423'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1652216967314' status='passed' stop='1652216967421'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='aaa4ac96-ea2c-40fc-bcbe-d573c1963fd1-attachment.json' type='application/json' size='55'/>
+                                <attachment title='Screenshot' source='882879bc-7e42-4f39-9bc8-b9826c1e409e-attachment.png' type='image/png' size='22322'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>By.cssSelector is not a function</message>
+                <stack-trace>TypeError: By.cssSelector is not a function
+                    at Context.&lt;anonymous> (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\test\specs\/checkBoxes.spec.js:20:31)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

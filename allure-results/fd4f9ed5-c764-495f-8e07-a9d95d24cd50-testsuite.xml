@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1651921217391' stop='1651921225370'>
+    <name>check test</name>
+    <title>check test</title>
+    <test-cases>
+        <test-case start='1651921217396' status='broken' stop='1651921225367'>
+            <name>Validate isSelected and click</name>
+            <title>Validate isSelected and click</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.54'/>
+            </parameters>
+            <steps>
+                <step start='1651921217407' status='passed' stop='1651921225011'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='50fd412a-eb80-4d32-9f98-a88dbf907658-attachment.json' type='application/json' size='60'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1651921225011' status='passed' stop='1651921225060'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='ef75ec7f-4771-4fef-acda-d5b1c00bf005-attachment.json' type='application/json' size='14'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1651921225074' status='broken' stop='1651921225367'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='cb4c6810-d06b-4023-ac04-7cfd0b5742b9-attachment.json' type='application/json' size='55'/>
+                    </attachments>
+                    <steps>
+                        <step start='1651921225101' status='passed' stop='1651921225363'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='fba3b326-a701-447b-aa79-e448e124de64-attachment.png' type='image/png' size='22322'/>
+                            </attachments>
+                            <steps>
+                                <step start='1651921225112' status='passed' stop='1651921225199'>
+                                    <name>POST /session/:sessionId/element</name>
+                                    <title>POST /session/:sessionId/element</title>
+                                    <attachments>
+                                        <attachment title='Request' source='1cbb0a3d-eb9e-4db6-8b99-b7312b811b5c-attachment.json' type='application/json' size='55'/>
+                                        <attachment title='Response' source='29c9f253-4c79-4fc1-9eb8-68b63c132814-attachment.json' type='application/json' size='1007'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>webdriver is not defined</message>
+                <stack-trace>ReferenceError: webdriver is not defined
+                    at Context.&lt;anonymous> (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\test\specs\/check.spec.js:10:19)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

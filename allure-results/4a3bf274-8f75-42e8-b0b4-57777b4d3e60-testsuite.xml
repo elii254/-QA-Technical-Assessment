@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652216073713' stop='1652216079050'>
+    <name>check box test</name>
+    <title>check box test</title>
+    <test-cases>
+        <test-case start='1652216073713' status='broken' stop='1652216079049'>
+            <name>should check the second checkbox</name>
+            <title>should check the second checkbox</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.54'/>
+            </parameters>
+            <steps>
+                <step start='1652216073717' status='passed' stop='1652216078693'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='5739b23a-27a5-471d-a3b4-5861743a75f1-attachment.json' type='application/json' size='60'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1652216078693' status='passed' stop='1652216078714'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='e546ab5b-8c14-45c6-a33e-22aa0f4c4cd6-attachment.json' type='application/json' size='14'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1652216078899' status='passed' stop='1652216079046'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='730b4f1c-e4d2-480d-a151-2016013a98eb-attachment.json' type='application/json' size='55'/>
+                        <attachment title='Screenshot' source='85cbd179-556b-44ef-9073-e576f86d3b8c-attachment.png' type='image/png' size='22322'/>
+                    </attachments>
+                    <steps>
+                        <step start='1652216078914' status='passed' stop='1652216078935'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Response' source='467d0bd8-c091-442d-95d4-d8be9ae8ce81-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>driver.findElement(...).click is not a function</message>
+                <stack-trace>TypeError: driver.findElement(...).click is not a function
+                    at Context.&lt;anonymous> (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\test\specs\/checkBoxes.spec.js:18:51)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

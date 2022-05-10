@@ -1,0 +1,80 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652187367874' stop='1652187381303'>
+    <name>check box test</name>
+    <title>check box test</title>
+    <test-cases>
+        <test-case start='1652187367876' status='broken' stop='1652187381301'>
+            <name>should validate page title</name>
+            <title>should validate page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.54'/>
+            </parameters>
+            <steps>
+                <step start='1652187367884' status='passed' stop='1652187378957'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='6eb90749-afb4-4e47-a969-b484c95e82d7-attachment.json' type='application/json' size='60'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1652187378957' status='passed' stop='1652187378977'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='b1303473-405c-4e16-8453-deabc6483c5e-attachment.json' type='application/json' size='14'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1652187378985' status='passed' stop='1652187379060'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='ad212b9a-889d-4bea-9fde-d174db9a1e12-attachment.json' type='application/json' size='50'/>
+                        <attachment title='Response' source='167b2d47-b2fa-4c8e-9e86-5ca081c91f44-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps>
+                        <step start='1652187378991' status='passed' stop='1652187379037'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='3e67e99a-ce0a-44e2-a09f-6af81e3eb7b9-attachment.json' type='application/json' size='55'/>
+                                <attachment title='Response' source='113458c1-2caf-48a9-82eb-700f6ed53850-attachment.json' type='application/json' size='1002'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1652187379068' status='passed' stop='1652187379122'>
+                    <name>POST /session/:sessionId/element/a9207548-4a9d-429e-b803-53465ee75ca2/click</name>
+                    <title>POST /session/:sessionId/element/a9207548-4a9d-429e-b803-53465ee75ca2/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1652187381161' status='passed' stop='1652187381299'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='eb003ecb-7b19-4c85-9a99-1dee6aac00d5-attachment.png' type='image/png' size='22322'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'trim' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'trim' of undefined
+                    at Element.selectByAttribute (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\node_modules\webdriverio\build\commands\element\selectByAttribute.js:49:55)
+                    at Element.wrapCommandFn (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\node_modules\@wdio\utils\build\shim.js:137:38)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at Element.wrapCommandFn (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Context.&lt;anonymous> (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\test\specs\/checkTest.spec.js:17:10)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

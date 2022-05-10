@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652184994434' stop='1652185000688'>
+    <name>check dropdown</name>
+    <title>check dropdown</title>
+    <test-cases>
+        <test-case start='1652184994435' status='broken' stop='1652185000684'>
+            <name>should validate page title</name>
+            <title>should validate page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.54'/>
+            </parameters>
+            <steps>
+                <step start='1652184994438' status='broken' stop='1652185000683'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a3fce096-5f02-466c-9977-dce44daadafe-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps>
+                        <step start='1652185000415' status='passed' stop='1652185000677'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='495e830c-9b4f-457b-ba57-d5beb4b7a6df-attachment.png' type='image/png' size='15264'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>unknown error: net::ERR_INTERNET_DISCONNECTED
+                  (Session info: chrome=101.0.4951.54)</message>
+                <stack-trace>unknown error: unknown error: net::ERR_INTERNET_DISCONNECTED
+                  (Session info: chrome=101.0.4951.54)
+                    at getErrorFromResponseBody (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\node_modules\webdriver\build\utils.js:197:12)
+                    at NodeJSRequest._request (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\node_modules\webdriver\build\request\index.js:166:60)
+                    at Browser.wrapCommandFn (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Browser.wrapCommandFn (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Context.&lt;anonymous> (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\test\specs\/dropdown.spec.js:5:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

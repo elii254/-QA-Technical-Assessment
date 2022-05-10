@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652215153602' stop='1652215159919'>
+    <name>check box test</name>
+    <title>check box test</title>
+    <test-cases>
+        <test-case start='1652215153603' status='broken' stop='1652215159917'>
+            <name>should check the second checkbox</name>
+            <title>should check the second checkbox</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.54'/>
+            </parameters>
+            <steps>
+                <step start='1652215153607' status='passed' stop='1652215159740'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='f0656226-d7c5-4277-9093-f00c959b8e25-attachment.json' type='application/json' size='60'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1652215159740' status='passed' stop='1652215159760'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='a3370832-723e-4656-8824-80c9cb0022bd-attachment.json' type='application/json' size='14'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1652215159782' status='broken' stop='1652215159917'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1652215159792' status='passed' stop='1652215159914'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='e4c6976e-8ad7-452a-a348-85ae11d8b69a-attachment.json' type='application/json' size='55'/>
+                                <attachment title='Screenshot' source='ae1a5f71-7d59-470d-ab64-4a7f521ba65a-attachment.png' type='image/png' size='22322'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot find module 'selenium-webdriver'
+                Require stack:
+                - C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\test\specs\checkBoxes.spec.js</message>
+                <stack-trace>Error: Cannot find module 'selenium-webdriver'
+                Require stack:
+                - C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\test\specs\checkBoxes.spec.js
+                    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+                    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+                    at Module.require (internal/modules/cjs/loader.js:974:19)
+                    at require (internal/modules/cjs/helpers.js:93:18)
+                    at Context.&lt;anonymous> (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\test\specs\/checkBoxes.spec.js:9:26)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

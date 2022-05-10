@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1651924564542' stop='1651924568207'>
+    <name>Authentic test</name>
+    <title>Authentic test</title>
+    <test-cases>
+        <test-case start='1651924564542' status='broken' stop='1651924568205'>
+            <name>should validate page title</name>
+            <title>should validate page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.54'/>
+            </parameters>
+            <steps>
+                <step start='1651924564548' status='passed' stop='1651924568039'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='917f8d1d-e048-4d7e-a2e9-15dd6721cf21-attachment.json' type='application/json' size='60'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1651924568057' status='passed' stop='1651924568202'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='fb371145-e3bf-45d9-8e26-99e1d7ee142a-attachment.png' type='image/png' size='3715'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot find module 'selenium-webdriver'
+                Require stack:
+                - C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\test\specs\googleTest.spec.js</message>
+                <stack-trace>Error: Cannot find module 'selenium-webdriver'
+                Require stack:
+                - C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\test\specs\googleTest.spec.js
+                    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+                    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+                    at Module.require (internal/modules/cjs/loader.js:974:19)
+                    at require (internal/modules/cjs/helpers.js:93:18)
+                    at Context.&lt;anonymous> (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\test\specs\/googleTest.spec.js:7:26)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

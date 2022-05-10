@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1651921703446' stop='1651921710199'>
+    <name>check test</name>
+    <title>check test</title>
+    <test-cases>
+        <test-case start='1651921703449' status='broken' stop='1651921710196'>
+            <name>Validate isSelected and click</name>
+            <title>Validate isSelected and click</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.54'/>
+            </parameters>
+            <steps>
+                <step start='1651921703457' status='passed' stop='1651921709875'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='b5c87691-025b-46e5-b1ea-ea0f881a84ff-attachment.json' type='application/json' size='60'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1651921709875' status='passed' stop='1651921709904'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='ec56ddb7-0b72-494d-be6f-258f92de0015-attachment.json' type='application/json' size='14'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1651921709915' status='broken' stop='1651921710195'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e0785a75-b981-46b6-8eee-43e2b9295615-attachment.json' type='application/json' size='55'/>
+                    </attachments>
+                    <steps>
+                        <step start='1651921709951' status='passed' stop='1651921710192'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='37a46329-72b3-4dd6-b422-d0f9793d7c49-attachment.png' type='image/png' size='22322'/>
+                            </attachments>
+                            <steps>
+                                <step start='1651921709961' status='passed' stop='1651921710022'>
+                                    <name>POST /session/:sessionId/element</name>
+                                    <title>POST /session/:sessionId/element</title>
+                                    <attachments>
+                                        <attachment title='Request' source='35b53b09-a123-47df-82c3-ca654e255813-attachment.json' type='application/json' size='55'/>
+                                        <attachment title='Response' source='19e8c53a-d239-4d5d-851f-2fb0effefdf7-attachment.json' type='application/json' size='1007'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>By is not defined</message>
+                <stack-trace>ReferenceError: By is not defined
+                    at Context.&lt;anonymous> (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\test\specs\/check.spec.js:13:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

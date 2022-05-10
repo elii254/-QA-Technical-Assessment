@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652213304094' stop='1652213304114'>
+    <name>Math</name>
+    <title>Math</title>
+    <test-cases>
+        <test-case start='1652213304095' status='passed' stop='1652213304110'>
+            <name>should test if 3*3 = 9</name>
+            <title>should test if 3*3 = 9</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.54'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1652213304111' status='passed' stop='1652213304112'>
+            <name>should test if (3-4)*8 = -8</name>
+            <title>should test if (3-4)*8 = -8</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.54'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,11 @@
+var webdriver = require("selenium-webdriver");
+var By = webdriver.By;
+var until = webdriver.until;
+
+var driver = new webdriver.Builder().forBrowser("chrome").build();
+driver.get("https://the-internet.herokuapp.com/basic_auth");
+driver.findElement(webdriver.By.id("username")).sendKeys("tester");
+    driver.findElement(webdriver.By.id("password")).sendKeys("test");
+    driver.findElement(webdriver.By.css("button")).click();
+    driver.wait(until.titleIs("Basic Auth"), 1000);
+      driver.quit();

@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1651921343191' stop='1651921349062'>
+    <name>check test</name>
+    <title>check test</title>
+    <test-cases>
+        <test-case start='1651921343192' status='broken' stop='1651921349059'>
+            <name>Validate isSelected and click</name>
+            <title>Validate isSelected and click</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.54'/>
+            </parameters>
+            <steps>
+                <step start='1651921343203' status='passed' stop='1651921348530'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='cf710f12-2228-4822-ae66-c976bfa751f9-attachment.json' type='application/json' size='60'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1651921348531' status='passed' stop='1651921348610'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='33bd18af-2c0d-4d1e-829f-4320183d6638-attachment.json' type='application/json' size='14'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1651921348747' status='broken' stop='1651921349059'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='42fd5cd6-8df7-41d1-a195-36a734320971-attachment.json' type='application/json' size='55'/>
+                    </attachments>
+                    <steps>
+                        <step start='1651921348788' status='passed' stop='1651921349055'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='2bffdae5-e721-45e4-ab56-d0d4bdf643b0-attachment.png' type='image/png' size='22322'/>
+                            </attachments>
+                            <steps>
+                                <step start='1651921348797' status='passed' stop='1651921348862'>
+                                    <name>POST /session/:sessionId/element</name>
+                                    <title>POST /session/:sessionId/element</title>
+                                    <attachments>
+                                        <attachment title='Request' source='51d5b29f-71fd-4814-951e-e7bebe67a3ab-attachment.json' type='application/json' size='55'/>
+                                        <attachment title='Response' source='eca14c45-0468-4494-84fc-48ac9993438b-attachment.json' type='application/json' size='1007'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'By' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'By' of undefined
+                    at Context.&lt;anonymous> (C:\Users\Elii\OneDrive - Burn Manufacturing\Desktop\mocha js\test\specs\/check.spec.js:10:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
